@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Esther 💙</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: linear-gradient(180deg, #ffeef5, #fff); min-height: 100vh; text-align: center; color: #4a2c3a; overflow-x: hidden; }
+.container { max-width: 500px; margin: 0 auto; padding: 30px 20px 60px; }
+h1 { font-size: 32px; margin: 10px 0 5px; }
+.sub { color: #888; margin-bottom: 25px; }
+.heart-big { font-size: 90px; animation: pulse 1.5s infinite; cursor: pointer; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+.card { background: white; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 20px 0; text-align: left; line-height: 1.7; }
+.card h2 { text-align: center; margin-bottom: 10px; }
+.btn { display: block; width: 100%; padding: 16px; border: none; border-radius: 50px; font-size: 17px; font-weight: bold; cursor: pointer; margin-top: 15px; }
+.btn-pink { background: #ff5e8a; color: white; }
+.btn-white { background: white; color: #ff5e8a; border: 2px solid #ff5e8a; }
+.hidden { display: none; }
+.fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+.fotos img { width: 100%; height: 140px; object-fit: cover; border-radius: 15px; }
+.resposta { font-size: 22px; font-weight: bold; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="heart-big" onclick="chuva()">💙</div>
+  <h1>Para Esther</h1>
+  <p class="sub">Clique no coração 💙</p>
+
+  <div class="card">
+    <h2>Minha carta pra você</h2>
+    <p>Esther,</p>
+    <p>Eu fiz esse site só pra você. Cada detalhe aqui é porque você é especial pra mim.</p>
+    <p>Você é a pessoa que deixa meu dia mais leve, meu sorriso mais fácil e meu coração mais feliz.</p>
+    <p>Que a gente viva muitos momentos lindos juntos. 💙</p>
+    <p style="text-align:right; margin-top:10px;"><b>Com carinho,<br>Vinícius</b></p>
+  </div>
+
+  <div class="card">
+    <h2>Nossas fotos 📸</h2>
+    <div class="fotos">
+      <img src="fotos/foto1.jpg" onerror="this.src='https://picsum.photos/400/300?random=1'">
+      <img src="fotos/foto2.jpg" onerror="this.src='https://picsum.photos/400/300?random=2'">
+      <img src="fotos/foto3.jpg" onerror="this.src='https://picsum.photos/400/300?random=3'">
+      <img src="fotos/foto4.jpg" onerror="this.src='https://picsum.photos/400/300?random=4'">
+    </div>
+    <p style="font-size:13px; color:#999; margin-top:10px; text-align:center;">As fotos da pasta "fotos" aparecem aqui automaticamente.</p>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <h2>Uma pergunta importante...</h2>
+    <p>Esther, você aceita continuar fazendo parte da minha vida?</p>
+    <button class="btn btn-pink" onclick="sim()">SIM! 💙</button>
+    <button class="btn btn-white" id="nao" onclick="fugir()">Não</button>
+    <p class="resposta hidden" id="resposta">EU SABIA! 💙💙💙<br>Te amo, Esther!</p>
+  </div>
+</div>
+
+<script>
+function sim() {
+  document.getElementById('resposta').classList.remove('hidden');
+  chuva();
+  alert('Melhor resposta do mundo! 💙');
+}
+function fugir() {
+  const b = document.getElementById('nao');
+  b.style.position = 'absolute';
+  b.style.left = Math.random() * 200 + 'px';
+  b.style.top = Math.random() * 300 + 'px';
+}
+function chuva() {
+  for(let i=0;i<20;i++){
+    const s = document.createElement('div');
+    s.innerText = '💙';
+    s.style.position = 'fixed';
+    s.style.left = Math.random()*100 + 'vw';
+    s.style.top = '-20px';
+    s.style.fontSize = '25px';
+    s.style.zIndex = 999;
+    document.body.appendChild(s);
+    let y = -20;
+    const t = setInterval(()=>{
+      y += 5; s.style.top = y + 'px';
+      if(y > window.innerHeight){ clearInterval(t); s.remove(); }
+    }, 30);
+  }
+}
+</script>
+</body>
+</html>
