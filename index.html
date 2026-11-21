@@ -3,90 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Esther 💙</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-body { background: linear-gradient(180deg, #ffeef5, #fff); min-height: 100vh; text-align: center; color: #4a2c3a; overflow-x: hidden; }
-.container { max-width: 500px; margin: 0 auto; padding: 30px 20px 60px; }
-h1 { font-size: 32px; margin: 10px 0 5px; }
-.sub { color: #888; margin-bottom: 25px; }
-.heart-big { font-size: 90px; animation: pulse 1.5s infinite; cursor: pointer; }
-@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
-.card { background: white; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: 20px 0; text-align: left; line-height: 1.7; }
-.card h2 { text-align: center; margin-bottom: 10px; }
-.btn { display: block; width: 100%; padding: 16px; border: none; border-radius: 50px; font-size: 17px; font-weight: bold; cursor: pointer; margin-top: 15px; }
-.btn-pink { background: #ff5e8a; color: white; }
-.btn-white { background: white; color: #ff5e8a; border: 2px solid #ff5e8a; }
-.hidden { display: none; }
-.fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
-.fotos img { width: 100%; height: 140px; object-fit: cover; border-radius: 15px; }
-.resposta { font-size: 22px; font-weight: bold; margin-top: 20px; }
-</style>
+<title>Para Esther</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <div class="heart-big" onclick="chuva()">💙</div>
-  <h1>Para Esther</h1>
-  <p class="sub">Clique no coração 💙</p>
 
-  <div class="card">
-    <h2>Minha carta pra você</h2>
-    <p>Esther,</p>
-    <p>Eu fiz esse site só pra você. Cada detalhe aqui é porque você é especial pra mim.</p>
-    <p>Você é a pessoa que deixa meu dia mais leve, meu sorriso mais fácil e meu coração mais feliz.</p>
-    <p>Que a gente viva muitos momentos lindos juntos. 💙</p>
-    <p style="text-align:right; margin-top:10px;"><b>Com carinho,<br>Vinícius</b></p>
+<header>
+  <div class="flor-grande">❤️</div>
+  <p class="tag">UM SITE SÓ PRA VOCÊ</p>
+  <h1>Para <i>Esther</i></h1>
+  <p class="sub">Quero apenas te Mostrar o quanto Gosto de você.<br>Espero Que goste.</p>
+  <a class="btn" href="#declaracao">Começar a ler ↓</a>
+</header>
+
+<section id="declaracao">
+  <h2>💙Como você chegou.</h2>
+  <div class="linha"></div>
+  <p>Em um dia no teatro estava eu, me aventurando em um desafio novo.<br>
+  E, sem perceber, me admirei com uma cacheada linda, eu olhava pra ela, ela me olhava, e apartir daí, o sentimento foi surgindo.</p>
+  <br>
+  <p>começamos a conversar, a paixão foi aumentando, e tudo começou a ganhar cor, como um quadro lindo a se pintar.<br>
+  foi derrepente, porém meus dias melhorou ao lado daquela cacheada.</p>
+
+  <div class="galeria">
+    <img src="foto01.jpg" alt="Nós dois" onerror="this.src='https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80'">
+    <img src="foto02.jpg" alt="Esther" onerror="this.src='https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=600&q=80'">
+    <img src="foto03.jpg" alt="Momento nosso" onerror="this.src='https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&q=80'">
   </div>
+  
+</section>
 
-  <div class="card">
-    <h2>Nossas fotos 📸</h2>
-    <div class="fotos">
-      <img src="fotos/foto1.jpg" onerror="this.src='https://picsum.photos/400/300?random=1'">
-      <img src="fotos/foto2.jpg" onerror="this.src='https://picsum.photos/400/300?random=2'">
-      <img src="fotos/foto3.jpg" onerror="this.src='https://picsum.photos/400/300?random=3'">
-      <img src="fotos/foto4.jpg" onerror="this.src='https://picsum.photos/400/300?random=4'">
-    </div>
-    <p style="font-size:13px; color:#999; margin-top:10px; text-align:center;">As fotos da pasta "fotos" aparecem aqui automaticamente.</p>
+<section>
+  <h2>Seus detalhes ✨</h2>
+  <div class="linha"></div>
+  <div class="cards">
+    <div class="card"><span>🩵</span><h3>Seu olhar</h3><p> Seu olhar de algum jeito me cativa, quando eu te olho é como se tudo ao redor não existisse</p></div>
+    <div class="card"><span>🪻</span><h3>Sua Voz</h3><p>Um Dom que Deus te deu, que suavimente invade o ambiênte como um bom perfume doce.  </p></div>
+    <div class="card"><span>💙</span><h3>Seu sorriso</h3><p>É o meu lugar favorito. Sério. Podia ficar olhando o dia inteiro.</p></div>
+    <div class="card"><span>🌸</span><h3>Você</h3><p>Você não é perfeita. É melhor: é real, é você, e é exatamente quem eu quero por perto.</p></div>
   </div>
+</section>
 
-  <div class="card" style="text-align:center;">
-    <h2>Uma pergunta importante...</h2>
-    <p>Esther, você aceita continuar fazendo parte da minha vida?</p>
-    <button class="btn btn-pink" onclick="sim()">SIM! 💙</button>
-    <button class="btn btn-white" id="nao" onclick="fugir()">Não</button>
-    <p class="resposta hidden" id="resposta">EU SABIA! 💙💙💙<br>Te amo, Esther!</p>
+<section>
+  <div class="carta">
+    <h2 class="esquerda">Minha declaração</h2>
+    <p>Pricesa,</p>
+    <p>Eu não sou muito bom com textão, mas com você eu quero tentar.</p>
+    <p>Eu gosto de como a vida fica mais bonita quando você tá nela. Gosto das nossas conversas , dos silêncios confortáveis, de saber que posso ser eu mesmo sem medo.</p>
+    <p>quero te lembrar que gosto muito de você, em pouco tempo  vc se tornou muito importante, é até engraçado como combinamos em tantas coisas, as vezes penso que Deus queria que estivessenos se encontrado pq sei que nada é por acaso.</p>
+    <p>acho que ta rolando transmissão de pensamento, mas penso que nós dois se tornou realidade faz tempo. </p>
+    <p class="assinatura">— Com carinho, pra você, Esther</p>
   </div>
-</div>
+</section>
 
-<script>
-function sim() {
-  document.getElementById('resposta').classList.remove('hidden');
-  chuva();
-  alert('Melhor resposta do mundo! 💙');
-}
-function fugir() {
-  const b = document.getElementById('nao');
-  b.style.position = 'absolute';
-  b.style.left = Math.random() * 200 + 'px';
-  b.style.top = Math.random() * 300 + 'px';
-}
-function chuva() {
-  for(let i=0;i<20;i++){
-    const s = document.createElement('div');
-    s.innerText = '💙';
-    s.style.position = 'fixed';
-    s.style.left = Math.random()*100 + 'vw';
-    s.style.top = '-20px';
-    s.style.fontSize = '25px';
-    s.style.zIndex = 999;
-    document.body.appendChild(s);
-    let y = -20;
-    const t = setInterval(()=>{
-      y += 5; s.style.top = y + 'px';
-      if(y > window.innerHeight){ clearInterval(t); s.remove(); }
-    }, 30);
-  }
-}
-</script>
+<section class="final">
+  <h2>E agora, uma pergunta:</h2>
+  <div class="linha"></div>
+  <p class="pergunta">Posso continuar fazendo parte dos seus dias por muito tempo?</p>
+  <button id="botaoSim"> Se sim, 
+    Clique aqui 💙</button>
+  <div id="resposta">ufaa você aceitou, vamooo kkk. 🪻<br><span>te amo thé 💙.</span></div>
+</section>
+
+<footer>Feito com carinho, pra vc vida. • 🪻💙</footer>
+
+
+<footer class="rodape">
+  <div class="onda"></div>
+
+  <div class="rodape-conteudo">
+    <div class="flores-rodape">🌸 💙 🌷 🩵 🌼</div>
+
+    <h3>Feito pra <span>Você</span></h3>
+    <p>fico procurando tempo kkk, fico pensando em vc acho melhor ❤️.</p>
+
+    <div class="divisor">✦ &nbsp; 🪻 &nbsp; ✦</div>
+
+    <p class="assinatura-rodape">Com carinho, de Vini.</p>
+    <p class="ano">© 2026 • Para thé, Te amo.</p>
+  </div>
+</footer>
+
+<section class="secao-desenho">
+  <h2>Uma flor desenhada pra você</h2>
+  <div class="linha"></div>
+  <p>Olha ela nascendo.</p>
+
+  <canvas id="florCanvas" width="360" height="360"></canvas>
+
+  <button id="desenharNovamente" class="btn">Desenhar de novo 💙</button>
+</section>
+
+
+<footer class="rodape">
+  <div class="onda"></div>
+
+  <div class="rodape-conteudo">
+    <div class="flores-rodape">🌸 💙 🌷 🩵 🌼</div>
+
+    <h3>Feito pra <span>Você</span></h3>
+    <p>fico procurando tempo kkk, fico pensando em vc acho melhor ❤️.</p>
+
+    <div class="divisor">✦ &nbsp; 🪻 &nbsp; ✦</div>
+
+    <p class="assinatura-rodape">Com carinho, de Vini.</p>
+    <p class="ano">© 2026 • Para thé, Te amo.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
